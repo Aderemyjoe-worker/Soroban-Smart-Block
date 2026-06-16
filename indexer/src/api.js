@@ -72,6 +72,9 @@ export function startApi() {
     else res.status(404).json({ error: "Not found" });
   });
 
+  // ── Health check (used by Docker Compose) ──────────────────────────────
+  app.get("/health", (_req, res) => res.json({ status: "ok" }));
+
   // ── Existing endpoints ──────────────────────────────────────────────────────
 
   // GET /api/events?contract=&fn=&page=
