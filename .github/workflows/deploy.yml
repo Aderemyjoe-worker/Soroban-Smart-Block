@@ -392,14 +392,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Generate changelog
-        id: changelog
-        uses: orhun/git-cliff-action@v3
-        with:
-          config: .github/cliff.toml
-          args: --latest --strip header
-        env:
-          OUTPUT: CHANGELOG.md
+
 
       - name: Bump npm versions
         run: |
