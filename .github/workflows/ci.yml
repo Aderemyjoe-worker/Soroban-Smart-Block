@@ -159,12 +159,13 @@ jobs:
 
       - name: Test with coverage thresholds
         run: >
-          node --test
+          node
           --experimental-test-coverage
           --test-coverage-branches=70
           --test-coverage-functions=75
           --test-coverage-lines=80
           --test-coverage-statements=80
+          --test
           test/**/*.test.js
         working-directory: indexer
 
