@@ -123,6 +123,7 @@ npx prettier --check "indexer/src/**/*.{js,json}" "frontend/src/**/*.{ts,tsx}" "
 - [ ] Indexer: `eslint` zero warnings and `npm test` pass.
 - [ ] Frontend: `eslint` zero warnings and `npm run build` pass.
 - [ ] Prettier formatting passes.
+- [ ] OpenAPI specification (`docs/api/openapi.yaml`) is updated and in sync with any endpoint changes.
 - [ ] Documentation is updated for user-facing or API changes.
 - [ ] The PR description explains the change and links the issue it closes.
 - [ ] No secrets or `.env` values are committed.
